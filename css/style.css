@@ -1,12 +1,12 @@
 /*	FOODSITE - STYLE FOR NEW SITE (GRID LAYOUT)  
 ************************************************/
 
-/*	IMPORT STYLES    */
+/*	----- IMPORT STYLES -----    */
 
 @import url(normalize.css);
 @import url(grid.css);
 
-/*  FONTS */   
+/* ----- FONTS ----- */   
 
 @font-face {
     font-family: ff-tisa-web-pro;
@@ -27,7 +27,7 @@
 }
 
 
-/*      ALL     */
+/*  -----  ALL -----  */
 
 body {
     height: 100%;
@@ -89,7 +89,7 @@ a:focus {
     min-height: 600px;
 }
 
-/*  ELEMENTS PAGE */
+/*  ----- ELEMENTS PAGE ----- */
 
 h2 {
     margin-bottom: 20px;
@@ -144,7 +144,7 @@ ul {
 }
 
 
-/*  SLIDER  */
+/*  ----- SLIDER -----  */
 
 .slider{
     margin:0;
@@ -180,7 +180,7 @@ li.active-slide {
     display: block;
 }
 
-/*  SLIDER NAV  */
+/* ----- SLIDER NAV ----- */
 
 .slider-nav {
     display: flex;
@@ -238,7 +238,7 @@ li.act-slide {
     color: #27ab97;
 }
 
-/*  BUTTONS ON SLIDER */
+/*  ----- BUTTONS ON SLIDER ----- */
 
 .slider-abs-pos{
     position: absolute;
@@ -276,7 +276,7 @@ li.act-slide {
     opacity: .8;
 }
 
-/*  NEWSLETTER  */
+/*  ----- NEWSLETTER ----- */
 
 .newsletter {
     margin-top: 30px;
@@ -341,7 +341,7 @@ fieldset.submit {
     padding: 0;
 }
 
-/*      LAST ARTICLES    */
+/*  ----- LAST ARTICLES ----- */
 
 .last {
     width: 100%;
@@ -396,7 +396,7 @@ fieldset.submit {
 }
 
 
-/*  FOOTER  */
+/* ----- FOOTER -----  */
 
 .col-12 {
     width: 1080px;
@@ -466,7 +466,7 @@ fieldset.submit {
      transition: 200ms;
 }
 
- /*     LEFT-NAV     */
+ /* -----  LEFT 1 - NAV ----- */
 
 .nav {
     margin:32px 0 0 0;
@@ -509,7 +509,7 @@ li.about a {
 }
 
 
-/*  LEFT-TWEET  */
+/*  ----- LEFT 2 - TWEET  -----  */
 
 .left-tweet {
     padding: 0;
@@ -573,5 +573,158 @@ li.about a {
 .faceb-sect {
     margin-top: 32px;
 }
+
+/*  ----- ADAPTIVE ----- 
+_______________________________________________*/
+
+/*  ----- 1 POINT 1176px -----  */
+@media only screen and (max-width: 1176px) {
+body {
+    margin: 0 auto;
+    padding: 50px 48px 0;
+}
+
+#wrapper {
+    width: 896px;
+    margin: 0 auto;
+}
+
+.col-9 {
+    width: 712px;
+    /*min-height: 600px;*/
+}
+
+.slider-nav {
+    height: 37px;
+}
+
+.slider-nav li{
+    padding: 0 !important;
+}
+
+.slider-nav h3{
+    margin-top: 8px; 
+    text-align: center;
+    font-size: .875em;
+}
+
+.slider-nav p{
+    visibility: hidden;
+}
+
+.slider-abs-pos h1 {
+    right: -712px;
+}
+.slider-abs-pos h2 {
+    right: -712px;
+}
+
+input#email{ 
+    width: 160px;
+}
+
+.art-item {
+    width: 159px;
+}
+
+.col-12 {
+    width: 896px;
+    /*margin-bottom: -7px;*/
+}
+
+} /* point 1 end */
+
+/*  ----- 2 POINT 991px -----  */
+
+@media only screen and (max-width: 991px) {
+body {
+    margin: 0 auto;
+    padding: 50px 48px 0;
+    padding-top: 0; 
+}
+
+#wrapper {
+    width: 712px;
+    margin: 0 auto;
+}
+
+.left-tweet {
+    display: none;
+}
+
+.col-12 {
+    width: 712px;
+}
+
+.col-3 {
+    width: 712px;
+    margin-top:-12px;
+    margin-bottom: 18px;
+
+}
+
+/* logo 2-point */
+.logo {
+    display: inline-block;
+    float:left;
+    margin-right: 100px;
+    margin-top:32px;      
+}
+
+/* nav 2-point */
+.nav {
+    margin:32px 0px 0 31px;
+    padding: 0;
+    display: inline-block;
+}
+
+.nav li {
+    display: inline-block;
+    margin: 70px 0px 0 0px;
+    line-height: 1.3em;
+}
+
+.nav li a {
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    font-style: italic;
+    display: inline;
+    padding: 35px 15px 0 15px;
+}
+
+.nav li a:hover {
+    background-position: 50% 15%;
+    transition: 200ms;
+}
+
+li.tast a {
+    background-image: url(../img/nav-tastemakers.png); 
+}
+li.blog a { 
+    background-image: url(../img/nav-blog.png); 
+}
+li.a-list a { 
+    background-image: url(../img/nav-alist.png); 
+}
+li.contrib a { 
+    background-image: url(../img/nav-contribute.png); 
+}
+
+li.about a {
+    background-image: url(../img/nav-about.png);
+}
+
+.social {
+    margin: 12px 2px 0 200px;
+}
+
+} /* point 2 end */
+
+/*  ----- 3 POINT 991px -----  */
+@media only screen and (max-width: 767px) {
+
+/*NACH OTSUDA*/
+
+} /* point 3 end */
 
 
