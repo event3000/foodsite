@@ -395,7 +395,6 @@ fieldset.submit {
     transition: 200ms;
 }
 
-
 /* ----- FOOTER -----  */
 
 .col-12 {
@@ -508,7 +507,6 @@ li.about a {
     background-image: url(../img/nav-about.png);
 }
 
-
 /*  ----- LEFT 2 - TWEET  -----  */
 
 .left-tweet {
@@ -577,8 +575,8 @@ li.about a {
 /*  ----- ADAPTIVE ----- 
 _______________________________________________*/
 
-/*  ----- 1 POINT 1176px -----  */
-@media only screen and (max-width: 1176px) {
+/*  ----- 1 POINT 1175px -----  */
+@media only screen and (max-width: 1175px) {
 body {
     margin: 0 auto;
     padding: 50px 48px 0;
@@ -591,7 +589,11 @@ body {
 
 .col-9 {
     width: 712px;
-    /*min-height: 600px;*/
+}
+
+/* slider 1 point */
+.slider li{
+    background-size: cover; 
 }
 
 .slider-nav {
@@ -619,24 +621,25 @@ body {
     right: -712px;
 }
 
+/* newsletter 1 point */
 input#email{ 
     width: 160px;
 }
 
+/* articles 1 point */
 .art-item {
     width: 159px;
 }
 
 .col-12 {
     width: 896px;
-    /*margin-bottom: -7px;*/
 }
 
 } /* point 1 end */
 
-/*  ----- 2 POINT 991px -----  */
+/*  ----- 2 POINT 990px -----  */
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 990px) {
 body {
     margin: 0 auto;
     padding: 50px 48px 0;
@@ -718,13 +721,274 @@ li.about a {
     margin: 12px 2px 0 200px;
 }
 
+.slider li{
+    background-size: cover; 
+}
+
 } /* point 2 end */
 
-/*  ----- 3 POINT 991px -----  */
+/*  ----- 3 POINT 767px -----  */
 @media only screen and (max-width: 767px) {
 
-/*NACH OTSUDA*/
+body {
+    margin: 0 auto;
+    padding: 50px 48px 0;
+    padding-top: 0; 
+}
+
+#wrapper {
+    width: 480px;
+    margin: 0 auto;
+}
+
+.left-tweet {
+    display: none;
+}
+
+.col-12 {
+    width: 480px;
+}
+
+.col-9 {
+    width: 480px;
+}
+
+.col-3 {
+    width: 480px;
+    margin-top:-12px;
+    margin-bottom: 18px;
+
+}
+/* slider 3-point */
+
+.slider{
+    height: 248px;
+}
+
+.slider li{
+    background-size: cover; 
+}
+
+
+.slider-abs-pos h1 {
+    top: -45px;
+    left: 0px;
+    width: 470px;
+    padding: 5px 0px 7px 10px;
+    font-size: 0.85em;
+    opacity: 0.6;
+}
+.slider-abs-pos h2 {
+    top: -9px;
+    left: 0px;
+    width: 470px;
+    padding: 8px 0px 9px 10px;
+    font-size: 0.65em;
+}
+
+.slider-nav{
+    display: none;
+}
+
+/* logo 3-point */
+.logo {
+    display: inline-block;
+    float:left;
+    margin-right: 0px;
+    margin-left: 20px;
+    margin-top:32px;      
+}
+
+/* nav 3-point */
+.nav {
+    margin:7px 0px 0 27px;
+    padding: 0;
+    display: inline-block;
+}
+
+.nav li {
+    display: inline-block;
+    margin: 70px 0px 0 0px;
+    line-height: 1.3em;
+}
+
+.nav li a {
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    font-style: italic;
+    display: inline;
+    padding: 5px 5px 0 5px;
+    font-size: 12px;
+}
+
+.nav li a:hover {
+    background-position: 50% 15%;
+    transition: 200ms;
+}
+
+li.tast a {
+    background-image: none; 
+}
+li.blog a { 
+    background-image: none; 
+}
+li.a-list a { 
+    background-image: none; 
+}
+li.contrib a { 
+    background-image: none; 
+}
+
+li.about a {
+    background-image: none;
+}
+
+.social {
+    margin: 12px 2px 0 200px;
+}
+
+/*  newsletter point 3 */
+
+.newsletter {
+    margin-top: 63px;
+    margin-bottom: 29px;
+    min-height: 98px;
+}
+
+.newsletter p {
+    width: 85%;
+}
+
+input#email{ 
+    width: 300px;
+    margin-left:-5px;
+}
+
+/*  last articles point 3 */
+
+.last {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 17px; 
+
+}
+
+
+.art-item {
+    width: 215px;
+    margin-bottom: 25px; 
+}
+
+/* footer point 3 */
+
+.footer-in {
+    /*border-top: 1px solid #E5E5E5;*/
+    padding-bottom: 6px;
+}
+
+.social{
+    margin: 12px 2px 0 0px;
+}
+
+.footer-in p{
+    padding-left: 10px;
+    font-size: .625em;
+}
 
 } /* point 3 end */
+
+/*  ----- 3 POINT 480px -----  */
+@media only screen and (max-width: 480px) {
+    body {
+    margin: 0 auto;
+    padding: 50px 48px 0;
+    padding-top: 0; 
+}
+
+#wrapper {
+    width: 320px;
+    margin: 0 auto;
+}
+
+.col-12 {
+    width: 320px;
+}
+
+.col-9 {
+    width: 320px;
+}
+
+.col-3 {
+    width: 320px;
+}
+
+/*  nav point 4 */
+.cont-left-in1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav {
+    order: 1;
+    margin:0;
+    padding:0;
+    height: 42px;
+    margin: 21px 0 10px 0;
+    box-sizing: border-box;
+    border-bottom: 2px solid #E5E5E5;
+}
+
+.nav li {
+    margin: 0;
+    line-height: 1.3em;
+}
+
+.nav li:first-child{
+    margin-left: 12px;
+}
+
+
+.nav li a {
+    padding: 5px 6px 0 6px;
+}
+
+
+/* logo point - 4 */
+.logo {
+    order: 2;
+    text-align: center;
+    margin: 7px 0 0 0; 
+}
+
+/* slider point - 4 */
+
+.slider-abs-pos h1 {
+    width: 310px;
+}
+.slider-abs-pos h2 {
+    width: 310px;
+}
+
+/*  newsletter point 4 */
+
+.newsletter { 
+    min-height: 100px;
+}
+
+.newsletter p {
+    width: 77%;
+}
+
+input#email{ 
+    width: 160px;
+    margin-left:-5px;
+}
+
+/* articles last - point 4 */
+.art-item {
+    width: 278px;
+}
+
+} /* point 4 end */
 
 
